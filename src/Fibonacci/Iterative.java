@@ -9,7 +9,7 @@ import Structs.BigIntegerStruct;
  * @author ybarrantes
  *
  */
-public class Iterative extends FibonacciClass
+public class Iterative implements IFibonacci
 {
 	public BigIntegerStruct calculate(int n)
 	{

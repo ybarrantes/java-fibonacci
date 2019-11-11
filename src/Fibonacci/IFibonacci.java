@@ -2,12 +2,7 @@ package Fibonacci;
 
 import Structs.BigIntegerStruct;
 
-/**
- * 
- * @author ybarrantes
- *
- */
-public abstract class FibonacciClass {
+public interface IFibonacci {
 	/**
 	 * Calcula el número Fibonacci
 	 * 
@@ -15,5 +10,5 @@ public abstract class FibonacciClass {
 	 * @return Estructura con el resultado de respuesta y tiempo de ejecución utilizado
 	 * @author ybarrantes
 	 */
-	public abstract BigIntegerStruct calculate(int i);
+	public BigIntegerStruct calculate(int i);
 }

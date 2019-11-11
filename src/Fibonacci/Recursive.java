@@ -7,7 +7,7 @@ import Structs.BigIntegerStruct;
  * @author ybarrantes
  *
  */
-public class Recursive extends FibonacciClass
+public class Recursive implements IFibonacci
 {
 
 	// estructura que almacena los resultados del calculo del numero 

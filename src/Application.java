@@ -21,6 +21,7 @@ public class Application {
 			System.out.println("-- Menú principal --");
 			System.out.println("   1 - Fibonacci (Modo Recursivo)");
 			System.out.println("   2 - Fibonacci (Modo Iterativo)");
+			System.out.println("   3 - Fibonacci (Modo Formula)");
 			System.out.println("  99 - Salir");
 			System.out.print("Ingrese una opción: ");
 			
@@ -47,6 +48,8 @@ public class Application {
 				return calcularFibonacci(new Fibonacci.Recursive());
 			case "2":
 				return calcularFibonacci(new Fibonacci.Iterative());
+			case "3":
+				return calcularFibonacci(new Fibonacci.Formula());
 			case "99":
 				return "Adios!";
 			default:
@@ -80,7 +83,7 @@ public class Application {
 		return numero;
 	}
 	
-	private static String calcularFibonacci(Fibonacci.FibonacciClass fib)
+	private static String calcularFibonacci(Fibonacci.IFibonacci fib)
 	{
 		return fib.calculate(leerEntero()).toString();
 	}
